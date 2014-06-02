@@ -17,7 +17,7 @@ App::GitHooks::Plugin::MatchBranchTicketID - Detect discrepancies between the ti
 
 =head1 DESCRIPTION
 
-C<App::GitHook::Plugin::PrependTicketID> allows pulling ticket IDs from the
+C<App::GitHooks::Plugin::PrependTicketID> allows pulling ticket IDs from the
 branch name. This way, if you're committing a lot, having a proper branch name
 can save you a lot of time.
 
