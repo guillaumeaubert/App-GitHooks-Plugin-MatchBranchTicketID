@@ -3,6 +3,7 @@ App-GitHooks-Plugin-MatchBranchTicketID
 
 [![Build Status](https://travis-ci.org/guillaumeaubert/App-GitHooks-Plugin-MatchBranchTicketID.svg?branch=master)](https://travis-ci.org/guillaumeaubert/App-GitHooks-Plugin-MatchBranchTicketID)
 [![Coverage Status](https://coveralls.io/repos/guillaumeaubert/App-GitHooks-Plugin-MatchBranchTicketID/badge.svg?branch=master)](https://coveralls.io/r/guillaumeaubert/App-GitHooks-Plugin-MatchBranchTicketID?branch=master)
+[![Latest Version](https://img.shields.io/github/tag/guillaumeaubert/App-GitHooks-Plugin-MatchBranchTicketID.svg?style=flat)](https://metacpan.org/release/App-GitHooks-Plugin-MatchBranchTicketID)
 
 App::GitHooks plugin to detect discrepancies between the ticket ID specified by
 the branch name and the one in the commit message.
