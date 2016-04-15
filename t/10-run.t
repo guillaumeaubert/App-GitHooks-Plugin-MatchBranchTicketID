@@ -8,7 +8,7 @@ use warnings;
 use Capture::Tiny;
 use Carp;
 use Test::Exception;
-use Test::Git;
+use Test::Requires::Git;
 use Test::More;
 
 use App::GitHooks::Test qw( ok_add_files ok_setup_repository );
@@ -18,7 +18,7 @@ use App::GitHooks::Test qw( ok_add_files ok_setup_repository );
 ## no critic (RegularExpressions::ProhibitComplexRegexes)
 
 # Require git.
-has_git( '1.7.4.1' );
+test_requires_git( '1.7.4.1' );
 
 # List of tests to perform.
 my $files =
@@ -102,7 +102,7 @@ my $tests =
 ];
 
 # Bail out if Git isn't available.
-has_git();
+test_requires_git();
 plan( tests => scalar( @$tests ) );
 
 foreach my $test ( @$tests )
