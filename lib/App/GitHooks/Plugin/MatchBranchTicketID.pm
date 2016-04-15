@@ -143,6 +143,7 @@ sub run_commit_msg
 	if ( defined( $ticket_id ) && defined( $branch_ticket_id ) && ( $branch_ticket_id ne $ticket_id ) )
 	{
 		print $app->color( 'red', "Your branch is referencing $branch_ticket_id, but your commit message references $ticket_id.\n" );
+		# uncoverable branch true
 		if ( $app->get_terminal()->is_interactive() )
 		{
 			print "Press <Enter> to continue committing with $ticket_id, or Ctrl-C to abort the commit.\n";
