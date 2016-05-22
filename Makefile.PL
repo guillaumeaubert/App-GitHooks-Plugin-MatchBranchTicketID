@@ -3,22 +3,22 @@ require 5.010;
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
+  'NAME' => 'App::GitHooks::Plugin::MatchBranchTicketID',
+  'VERSION_FROM' => 'lib/App/GitHooks/Plugin/MatchBranchTicketID.pm',
   'PL_FILES' => {},
   'EXE_FILES' => [],
-  'NAME' => 'App::GitHooks::Plugin::MatchBranchTicketID',
-  'PREREQ_PM' => {
-                   'Capture::Tiny' => 0,
-                   'Test::More' => '0.94',
-                   'Test::Exception' => 0,
-                   'Test::Requires::Git' => '1.005',
-                   'App::GitHooks' => 0,
-                   'Test::FailWarnings' => 0,
-                   'Git::Repository' => 0
-                 },
-  'VERSION_FROM' => 'lib/App/GitHooks/Plugin/MatchBranchTicketID.pm',
   'INSTALLDIRS' => 'site',
   'test' => {
               'TESTS' => 't/*.t'
-            }
+            },
+  'PREREQ_PM' => {
+                   'Test::FailWarnings' => 0,
+                   'Test::Requires::Git' => '1.005',
+                   'Test::Exception' => 0,
+                   'Capture::Tiny' => 0,
+                   'Git::Repository' => 0,
+                   'App::GitHooks' => 0,
+                   'Test::More' => '0.94'
+                 }
 )
 ;
